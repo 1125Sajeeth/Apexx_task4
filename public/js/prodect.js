@@ -1,3 +1,14 @@
+// navigation
+function setActive(element) {
+  // Remove active class from all links
+  document.querySelectorAll('.nav-link').forEach((navLink) => {
+    navLink.classList.remove('active');
+  });
+
+  // Add active class to the clicked link
+  element.classList.add('active');
+}
+
 // Image
 
 document.addEventListener('DOMContentLoaded', function() {
